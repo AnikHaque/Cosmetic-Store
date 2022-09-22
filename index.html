@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cosmetic-Store</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+                crossorigin="anonymous">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+        <header>
+                <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                        <div class="container">
+                                <a id="logo" onclick="displayHomePart()" class="navbar-brand">
+                                        <h3>Cosmetic-Store</h3>
+                                </a>
+                                <a id="cart-icon" onclick="myCart()" class="nav-link active text-white"
+                                        aria-current="page" href="#"><i class="fas fa-cart-plus"><span class=" orange"
+                                                        id="product-count"> 0
+                                                </span></i>
+                                </a>
+
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse navigation" id="navbarSupportedContent">
+                                        <ul class="navbar-nav ms-auto text-center">
+                                                <li id="home" onclick="displayHomePart()" class="nav-item">
+                                                        <a class="nav-link active" aria-current="page">Home</a>
+                                                </li>
+                                                <li id="products" onclick="showProducts()" class="nav-item">
+                                                        <a class="nav-link active" aria-current="page"
+                                                                href="#">Products</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link active" aria-current="page" href="#">About
+                                                                Us</a>
+                                                </li>
+                                                <li id="my-cart" onclick="myCart()" class="nav-item">
+                                                        <a class="nav-link active" aria-current="page"
+                                                                href="#">My-Cart</a>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </div>
+                </nav>
+
+                <!-- Background Image -->
+                <section id="bg-section" class="cover mt-5 text-white">
+                        <div class="cover-headline ps-5 pe-1">
+                                <div>
+                                        <h1><span style="font-size: 75px;" class="violet fw-bold">O</span>range
+                                                Cosmics</h1>
+                                        <h2 class="ms-1"> A <span class="violet">Best Brand </span>For You...</h2>
+                                        <button id="head-btn" onclick="showProducts()"
+                                                class="btn btn-danger mt-2 fw-bold items">
+                                                See Our Products <i class="fas fa-angle-double-right"></i></button>
+
+                                </div>
+                        </div>
+                </section>
+        </header>
+        <!-- Loader Section -->
+        <section id="loader" class="mt-5 pt-5">
+                <div class="d-flex justify-content-center">
+                        <img class="img-fluid" src="images/loader.gif" alt="">
+                </div>
+        </section>
+        <!-- Main Section Start -->
+        <main id="main-part" class="">
+                <!-- Home Section -->
+                <section class="" id="home-section">
+                        <!-- Power of Orange Makeup -->
+                        <div class="container mt-5 pt-5">
+                                <div class="row">
+                                        <div class="col-lg-6">
+                                                <img src="https://i.ibb.co/25vSnzs/orange.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-lg-6 p-5">
+                                                <h1 class="pt-3">Power of <span class="violet">Orange</span> Makeup</h1>
+                                                <p class="text-gray w-75 pt-4">Sed feugiat et ligula quis lobortis.
+                                                        Vestibulum
+                                                        condimentum dapibus
+                                                        aliquam. Vivamus sed ante purus. Nullam ac commodo ex lorem
+                                                        ipsum loret.</p>
+                                                <button id="head-btn" onclick="showProducts()"
+                                                        class="btn btn-danger mt-2 fw-bold items">
+                                                        See Our Products <i class="fas fa-angle-double-right"></i>
+                                                </button>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- Slider Section -->
+                        <div id="review">
+                                <h1 class="violet text-center pt-5 mt-5">See Our Customer's</h1>
+                                <h2 class="text-center">Review</h2>
+                                <div id="carouselExampleCaptions" class="carousel review-slidee slide mt-5" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                        <img src="https://i.ibb.co/rF4tr25/review-slide.png"
+                                                                class="d-block w-100 img-fluid" alt="...">
+                                                        <div class="carousel-caption pb-5 mb-5">
+                                                                <div class="review-people">
+                                                                        <img style="height: 180px;
+                                                                        width: 180px;"
+                                                                                src="https://i.ibb.co/Wthbg66/3-min-min.png"
+                                                                                class="rounded-circle img-fluid border border-3 border-light">
+
+                                                                </div>
+                                                                <h5 class="text-warning mt-4">Mira Kira</h5>
+                                                                <p>Before we look at some positive review examples and
+                                                                        talk about how your business can leave winning
+                                                                </p>
+                                                                <div>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <img src="https://i.ibb.co/rF4tr25/review-slide.png"
+                                                                class="d-block w-100 img-fluid" alt="...">
+                                                        <div class="carousel-caption pb-5 mb-5">
+                                                                <div class="review-people">
+                                                                        <img style="height: 180px;
+                                                                        width: 180px;"
+                                                                                src="https://i.ibb.co/njD17Jp/2-min-min.png"
+                                                                                class="rounded-circle img-fluid border border-3 border-light">
+
+                                                                </div>
+                                                                <h5 class="text-warning mt-4">Jessika Kran</h5>
+                                                                <p>A good review should describe various aspects of the
+                                                                        customer experience. Did the customer receive
+                                                                        fantastic customer service?
+                                                                </p>
+                                                                <div>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <img src="https://i.ibb.co/rF4tr25/review-slide.png"
+                                                                class="d-block w-100 img-fluid" alt="...">
+                                                        <div class="carousel-caption pb-5 mb-5">
+                                                                <div class="review-people">
+                                                                        <img style="height: 180px;
+                                                                        width: 180px;"
+                                                                                src="https://i.ibb.co/Dpf3BFX/1-min-min.png"
+                                                                                class="rounded-circle img-fluid border border-3 border-light">
+
+                                                                </div>
+                                                                <h5 class="text-warning mt-4">Chang Chung</h5>
+                                                                <p> This is a valuable opportunity to show how your
+                                                                        business responds to feedback. Thank the
+                                                                </p>
+                                                                <div>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                        </button>
+                                </div>
+                        </div>
+                        <!-- Slider Section End -->
+                        <!-- Form Part -->
+                        <div>
+                                <h1 class="pt-5 text-center">Get Every Update</h1>
+                                <div class="container mx-auto row mt-5">
+                                        <div class="col-lg-6">
+                                                <h3 class="pt-2 pb-3 orange">Contact Info</h3>
+                                                <div>
+                                                        <h6 class="pt-2"><i class="fas fa-envelope orange-icon"></i>
+                                                                contact@beauty.com</h6>
+                                                        <h6 class="pt-2"><i class="fas fa-clock orange-icon"></i> Monday
+                                                                to
+                                                                Friday 7am to 8pm
+                                                        </h6>
+                                                        <h6 class="pt-2"><i
+                                                                        class="fas fa-phone-square-alt orange-icon"></i>
+                                                                123
+                                                                456 789</h6>
+                                                        <h6 class="pt-2"><i
+                                                                        class="fas fa-map-marker-alt orange-icon"></i>
+                                                                Coppice Celyn 123,
+                                                                MA US</h6>
+                                                </div>
+                                                <img src="https://i.ibb.co/Qb8mRty/Screenshot-91.png"
+                                                        class="w-75 img-fluid rounded-2 mt-3" alt="">
+                                        </div>
+                                        <div id="from" class="col-lg-6 rounded-2 mt-4">
+                                                <form class="w-75 mx-auto pb-4">
+                                                        <div class="mb-3 pt-5">
+                                                                <input type="text" class="form-control p-3"
+                                                                        id="exampleInputEmail1"
+                                                                        aria-describedby="emailHelp"
+                                                                        placeholder="Your Name">
+                                                        </div>
+                                                        <div class="mb-3 pt-3">
+                                                                <input type="email" class="form-control p-3"
+                                                                        id="exampleInputPassword1"
+                                                                        placeholder="Your Email">
+                                                        </div>
+                                                        <div class="mb-3 pt-3">
+                                                                <input type="date" class="form-control p-3"
+                                                                        id="exampleInputPassword1"
+                                                                        placeholder="Your Email">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                                <label for="disabledSelect" class="form-label"></label>
+                                                                <select id="disabledSelect" class="form-select p-3">
+                                                                        <option>Select Item</option>
+                                                                        <option>Blush</option>
+                                                                        <option>Makeup</option>
+                                                                        <option>Foundation</option>
+                                                                </select>
+                                                        </div>
+                                                        <div class="d-grid gap-2 pt-3">
+                                                                <button type="button"
+                                                                        class="btn btn-dark btn-lg p-3">Submit</button>
+                                                        </div>
+
+                                                </form>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- Form Part End -->
+                </section>
+
+                <!-- Confirm Message -->
+                <section id="confirm-message">
+
+                </section>
+                <!-- Cart Section -->
+                <section id="cart-container" class="container">
+                        <!-- Cart Title Part -->
+                        <div id="cart-title">
+                                <h2 class="text-center text-danger mt-5 pt-5">Please Add to Cart Product!</h2>
+                        </div>
+                        <div class="row pt-5 mt-5">
+                                <div class="col-1 text-center">
+                                        <h3>S.L</h3>
+                                </div>
+                                <div id="" class="col-8">
+                                        <h3 class="text-success text-center">Product Name</h3>
+                                </div>
+                                <div id="" class="col-3">
+                                        <h3 class="text-success">Price</h3>
+                                </div>
+                                <hr class="text-success">
+                        </div>
+
+                        <!-- Details in Cart -->
+                        <div id="cart-details">
+
+                        </div>
+                        <!-- Display Total Price -->
+                        <div id="total" class="row">
+                                <div class="col-1">
+
+                                </div>
+                                <div id="" class="col-8">
+                                        <h4>Total Price</h4>
+                                </div>
+                                <div id="total-price" class="col-3">
+
+                                </div>
+                        </div>
+                </section>
+                <!-- Display Product -->
+                <section id="display-product" class="container mt-5 pt-5">
+                        <div class="mt-5">
+                                <div class="container h-100 d-flex justify-content-center align-items-center">
+                                        <!-- Set All Button For Single Product Load -->
+                                        <div class="text-center">
+                                                <h1 class="text-center pb-5">Select Your <span
+                                                                class="violet">Items</span></h1>
+                                                <!-- <div class="text-center pb-3">
+                                                        <img class="img-fluid w-75 rounded-3" src="images/down.png"
+                                                                alt="">
+                                                </div> -->
+                                                <button onclick="singleItem('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=blush', 'Blush')"
+                                                        id="" class="btn btn-danger m-2 fw-bold items"><img
+                                                                src="images/btn-icon/blush.png">
+                                                        Blush</button>
+                                                <button onclick="singleItem('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=bronzer', 'Bronzer')"
+                                                        id="" class="btn btn-danger m-2 fw-bold items"><img
+                                                                src="images/btn-icon/bronzer.png">
+                                                        Bronzer</button>
+                                                <button onclick="singleItem('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyebrow', 'Eyebrow')"
+                                                        id="" class="btn btn-danger m-2 fw-bold items"><img
+                                                                src="images/btn-icon/eyebrow.png">
+                                                        Eyebrow</button>
+                                                <button onclick="singleItem('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeliner', 'Eyeliner')"
+                                                        id="" class="btn btn-danger m-2 fw-bold items"><img
+                                                                src="images/btn-icon/eyeliner.png">
+                                                        Eyeliner</button>
+                                                <button onclick="singleItem('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeshadow', 'Eyeshadow')"
+                                                        id="" class="btn btn-danger m-2 fw-bold items"><img
+                                                                src="images/btn-icon/eyeshadow.png">
+                                                        Eyeshadow</button>
+                                                <br>
+                                                <button onclick="singleItem('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation', 'Foundation')"
+                                                        id="items" class="btn btn-danger m-2 fw-bold items"><img
+                                                                src="images/btn-icon/foundation.png">
+                                                        Foundation</button>
+                                                <button onclick="singleItem('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=lip_liner', 'Lip liner')"
+                                                        id="" class="btn btn-danger m-2 fw-bold items"><img
+                                                                src="images/btn-icon/lip liner.png"> Lip
+                                                        liner</button>
+                                                <button onclick="singleItem('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=lipstick', 'Lipstick')"
+                                                        id="" class="btn btn-danger m-2 fw-bold items"><img
+                                                                src="images/btn-icon/li[stick.png">
+                                                        Lipstick</button>
+                                                <button onclick="singleItem('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=mascara', 'Mascara')"
+                                                        id="" class="btn btn-danger m-2 fw-bold items"><img
+                                                                src="images/btn-icon/mascara.png">
+                                                        Mascara</button>
+                                                <!-- <button onclick="singleItem('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=nail_polish', 'Nail Polish')"
+                                                        id="items" class="btn btn-danger m-2">Nail Polish</button> -->
+                                                <!-- Ready Item After Click -->
+                                                <h2 class="text-white text-center mt-5 mb-5" id="ready-items"></h2>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- Product Container -->
+                        <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 g-5" id="product-container">
+                        </div>
+                </section>
+                <!-- Confirm Purchase Button -->
+                <section id="confirm-section" class="container mt-5">
+                        <div class="row mt-5 pt-5">
+                                <div class="col-8 orange">
+                                        <h3 class="text-center">Please Confirm Purchase✌</h3>
+                                </div>
+                                <div class="col-4">
+                                        <div class="d-grid gap-2">
+                                                <button id="confirm-btn" class="btn btn-success fw-bold">Confirm
+                                                        Purchase</button>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+        </main>
+        <!-- Main Part Complete -->
+        <!-- Footer Part -->
+        <footer id="footer" class="text-white container-fluid">
+                <div class="container pb-5">
+                        <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-lg-5 mt-5">
+                                        <a style="cursor: pointer;" id="logo" onclick="displayHomePart()">
+                                                <h3> <img src="images/logo.png"> range Cosmics</h3>
+                                        </a>
+                                        <h6 class="mt-3"><i class="fas fa-map-marker-alt"></i> Level-4, 34, Maskanda
+                                                Passport Office
+                                                Road,
+                                                Mymensingh.</h6>
+                                        <h6><i class="fas fa-envelope"></i> Official: abc@gmail.com</h6>
+                                        <h6><i class="fas fa-info-circle"></i> Helpline : +878545454545 (Available :
+                                                09:00am to
+                                                7:00pm)</h6>
+                                </div>
+                                <div class="col-lg-3 mt-5 footer-text">
+                                        <h6>About Us</h6>
+                                        <h6>Refund Policy</h6>
+                                        <h6>Terms & Condition</h6>
+                                        <h6>Privacy Policy</h6>
+                                </div>
+                                <div class="col-lg-4 mt-5">
+                                        <div>
+                                                <img class="img-fluid rounded" src="images/card.png" alt="">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </footer>
+        <!-- Footer Part End -->
+
+        <!-- Bootstrap CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/783f1de6e0.js" crossorigin="anonymous"></script>
+        <!-- Javascript -->
+        <script src="app.js"></script>
+        <!-- Animation Script -->
+</body>
+
+</html>

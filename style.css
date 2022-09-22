@@ -1,0 +1,205 @@
+body {
+        font-family: 'Poppins', sans-serif;
+}
+
+#product-count {
+        color: black;
+        font-size: 25px;
+}
+
+#head-btn {
+        background-color: blueviolet;
+        font-size: 20px;
+}
+
+#head-btn:hover {
+        background-color: black;
+        transform: scale(1.05);
+        transition: transform 2s ease;
+}
+
+.orange-icon {
+        color: blueviolet;
+}
+
+h3>img {
+        width: 32px;
+        height: 35px;
+        border-radius: 60%;
+}
+
+nav a {
+        font-weight: 500;
+}
+
+nav a:hover {
+        cursor: pointer;
+}
+
+nav {
+        background-color: blueviolet;
+}
+
+/* Form Style */
+
+#from {
+       background-color: blueviolet;
+}
+
+/* For Review Section */
+
+#carouselExampleCaptions img {
+        height: 500px;
+}
+
+.fa-star {
+        color: blue;
+        font-size: 22px;
+}
+.review-slide{
+        background-color: blueviolet;
+}
+/* Loader */
+
+#loader img {
+        height: 220px;
+        width: 220px;
+}
+
+.single-color {
+        border: 2px solid blueviolet;
+}
+
+.product-color {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        margin: 2px;
+}
+
+.navbar ul li:hover a {
+        color: black !important;
+        transform: scale(1.15);
+        transition: transform 2s;
+}
+
+.orange {
+        color: blueviolet;
+}
+
+/* Cover */
+
+.cover-headline {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center!important;
+}
+
+.cover h1 {
+        font-size: 60px;
+}
+
+.cover {
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: animate 16s ease-in infinite;
+}
+.violet{
+        color: blueviolet;
+}
+@keyframes animate {
+        0%, 100% {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.ibb.co/QPfKw9D/1-min.png);
+        }
+        25% {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.ibb.co/74q9KR4/2-min.png);
+        }
+        50% {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.ibb.co/NpKZdNc/3-min.png);
+        }
+        75% {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.ibb.co/DDpCjpz/4-min.png);
+        }
+}
+
+#display-product .items {
+        background: blueviolet;
+}
+
+#display-product .items img {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+}
+
+#display-product .items:hover {
+        background-color: black;
+        transform: scale(1.25);
+        transition: transform 2s;
+}
+
+.items:active {
+        box-shadow: 5px 5px 5px black
+}
+
+.title-word {
+        color: lightgreen;
+        font-size: 60px;
+}
+
+/* Add Cart Style Start*/
+
+#cart-container {
+        margin-top: 7%;
+}
+
+/* Add Cart Style End*/
+
+/* Product Card Style */
+
+.product-card {
+        border: 1px solid darkgray;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px darkgray;
+}
+
+.product-card:hover {
+        transform: scale(1.05);
+        transition: transform 2s;
+        box-shadow: 2px 2px 10px blueviolet;
+        border: 1px solid blueviolet;
+        border-radius: 10px;
+}
+
+#add-cart {
+        background-color: blueviolet;
+}
+
+.product-image {
+        height: 180px;
+        text-align: center;
+}
+
+.product-image img {
+        height: 180px;
+        width: 180px;
+}
+
+.product-name {
+        height: 50px;
+}
+
+.product-price {
+        color: darkmagenta;
+}
+
+/* Footer Style Start */
+
+#footer {
+        margin-top: 280px;
+     background-color: blueviolet;
+}
+
+/* Text Animation */
